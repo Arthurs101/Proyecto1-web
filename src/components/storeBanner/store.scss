@@ -1,0 +1,107 @@
+$blueishgray: #abb8c3;
+.super-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.store-banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.promotional-video{
+    width: 30%;
+    height: 50vh;
+    object-fit: cover;
+    source{
+        box-sizing: inherit;
+    }
+}
+.store-products{
+    background-image: url('https://static.messi.com/wp-content/uploads/2020/11/2020-11-MS-MSCOM-Banner-Desktop-Background.png');
+    height: 50vh;
+    width: 70%;
+}
+.messi-grafiti{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.2vh;
+    color: #001d3d;
+    font-weight: bold;
+}
+.messi-products{
+    display: flex;
+    flex-direction: row;
+    max-height: 30vh;
+    padding-top: 5vh;
+    .product-item{
+        height: auto;
+        width: 13vw;
+        transition: transform 1s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+.apps{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    left:-5vw;
+    bottom: -3vh;
+    .app-icon{
+        height: 6vh;
+        width: 8vw;
+        padding-left: 1vw;
+        transition: transform 1s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+}
+.messi-brand{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    .messi-description{
+       
+        padding: 2%;
+        width: 30%;
+        overflow: hidden;
+        p{
+            text-align: center;
+            overflow-wrap: break-word;
+        }
+        h2{
+            text-align: center;
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: lighter;
+            line-height: 1.2;
+            margin: 0 0 20px;
+        }
+        }
+        
+    }
+    .store-video{
+        width: 30%;
+    }
+.messibanner{
+    position: relative;
+    right: 0vw;
+    float: right;
+    height: 55vh;
+    bottom: -58vh;
+}

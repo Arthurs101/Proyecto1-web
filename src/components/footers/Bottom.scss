@@ -1,0 +1,121 @@
+@keyframes slide-left {
+    from{
+      padding-right: 30vw;
+      opacity: 0;
+    }
+    to{
+        padding-right: 0vw;
+        opacity: 1;
+    }
+}
+@keyframes slow-colouring {
+    from{
+        filter: grayscale(100%);
+    }to{
+        filter: grayscale(0%);
+    }
+}
+@keyframes reverse-colouring {
+    from{
+        filter: grayscale(0%);
+    }to{
+        filter: grayscale(100%);
+    }
+}
+.end-page{
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-top: 6vh;
+}
+.cirque-du-solei-wrapper{
+    height: auto;
+    width: 100%;
+    .cirque-du-solei-bkg{
+        background-repeat: no-repeat;
+        
+        background-size: cover;
+        background-image: url('../../asssets/solei.jpg');
+        background-position: center center;
+        height: 70vh;
+        width: 100%;
+        animation: reverse-colouring 1s ease-in forwards ;
+        &.animate{
+            animation: slow-colouring 1s ease-in forwards ;
+            .messi_prom{
+                animation: slide-left 1s ease-in forwards;
+            }
+        }
+    }
+}
+
+.logos-container{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    overflow: hidden;
+}
+.caixa-cirque {
+    margin-top: 5vh;
+    margin-left: 2vw;
+    width: 20vw;
+    background: rgba(245,245,245,0.9);
+    margin-bottom: .5em;
+    border-radius: 10px;
+    display: inline-block;
+    height: 100px;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+}
+.pais-cirque-box {
+    font-family: Montserrat, sans-serif;
+    width: 30%;
+    float: left;
+    margin: auto;
+    top: 20px;
+    position: relative;
+    padding-left: 10px;
+    border-right: 3px solid #3f3f3f;
+    height: 60px;
+}
+.pais-cirque {
+    width: auto;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #3f3f3f;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.ciudad-cirque {
+    width: auto;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #3f3f3f;
+    font-weight: 700;
+}
+.lugar-cirque-box {
+    font-family: Montserrat, sans-serif;
+    width: 42%;
+    float: left;
+    margin: auto;
+    top: 20px;
+    position: relative;
+    padding-left: 10px;
+    border-right: 3px solid rgb(63, 63, 63);
+    height: 60px;
+    .lugar {
+        
+        width: auto;
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        margin-top: 8px;
+    }
+    .fecha-cirque {
+        width: auto;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+}

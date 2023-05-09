@@ -1,0 +1,81 @@
+$main-color: rgba(19, 212, 237 ,0.8);
+$secondary-color: rgba(143, 235, 247,0.8);
+@keyframes enlarge-bar {
+    from{
+        width: 20vw;
+    }to{
+        width: 70vw;
+    }
+}
+@keyframes enlarge-bar-special {
+    from{
+        width: 10vw;
+    }to{
+        width: 30vw;
+    }
+}
+.Static{
+    font-family: Montserrat, bold;
+    color: white;
+    opacity: 1;
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 1wv;
+    margin-right: 1vw;
+}
+.Messi-Stats-bar{
+    
+    padding-top:2vh;
+
+    position: relative;
+
+    right: 1vw;
+    text-align: right;
+
+    justify-content: center;
+    align-items: center;
+    font-family:Montserrat, sans-serif;
+    width: 20vw;
+    &.BIG{
+        background-color: $main-color;
+        height: 4vh;
+        p{
+            font-family: Montserrat, sans-serif,bold;
+            color: white;
+            opacity: 1;
+            font-size: 30px;
+            font-weight: 900;
+            margin: 0;
+            position: relative;
+            bottom: 0.5vh;
+        }
+    }
+    &.SMALL{
+        background-color: $secondary-color;
+        height: 1vh;
+        margin-right: 1vw;
+        display: block;
+        &#special{
+            width: 10vw;
+            &.animate{
+                animation: enlarge-bar-special 8s ease-in forwards;
+            }
+            background-color: $main-color;
+            margin-right: 4.2vw;
+        }
+            p{
+                position: relative;
+                right: 0;
+                bottom: 1.5vh;
+                font-family: Montserrat, sans-serif,bold;
+            color: white;
+            opacity: 1;
+            font-size: 22px;
+            font-weight: 900;
+            margin: 0;
+        }
+    }
+    &.animate{
+        animation: enlarge-bar 8s ease-in forwards;
+    }
+}

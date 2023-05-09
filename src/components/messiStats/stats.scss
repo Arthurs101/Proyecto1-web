@@ -1,0 +1,104 @@
+@keyframes slow-bk {
+    from{
+        background-color: transparent;
+    }to{
+        background-color: #13d4ed;
+    }
+}
+.messi-stats-text{
+    font-family: "Big Shoulders Text", sans-serif;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    bottom: 115vh;
+    font-size: 3.2vw;
+    left: 2vw;
+}
+.messi-team{
+    font-family: "Big Shoulders Text", sans-serif;
+    color: white;
+    font-weight: 300;
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    bottom: 128vh;  
+    left: 25vw;
+    width: 20vw;
+
+    .team-name{
+        padding: 0.5vw;
+        border-radius: 0.5rem;
+        &.active{
+            background-color: #13d4ed;
+            &:hover{
+                background-color: #13d4ed;
+            }
+        }
+        &:hover{
+            animation: slow-bk 2s forwards;
+        }
+
+    }
+}
+.total{
+    -webkit-text-stroke: 1px white;
+    font-family: "Big Shoulders Text", sans-serif;
+    left: 55vw;
+    color: transparent;
+    position: relative;
+    margin: 0;
+    top : -95vh;
+    font-size: 120px;
+    transform: scaleY(2);
+}
+#stats{
+    position: relative;
+    bottom: 110vh;
+    width: 7vw;
+    height: 7vw;
+    left:3vw;
+}
+.Messi-Stats-Wrapper{
+    width: 100%;
+    max-height: 100vh;
+    padding-top: 10vh;
+    background-size: cover;
+    overflow: hidden;
+    .Messi-background{
+        background-image: url('https://static.messi.com/wp-content/uploads/2022/12/MESSI-Stats-COPA.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+    }
+    .Messi-Stats-Wrapper{
+        position: relative;
+        padding: 4vw;
+        bottom : 140vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Messi-Stats-item{
+        width: 80vw;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+            h1{
+            font-family: Montserrat, sans-serif;
+            font-size: 2vw;
+            font-weight: 400;
+            color: white;
+            letter-spacing: 0.1vw;
+            border-radius: 50%;
+            border: solid 2px #13d4ed; 
+            width: 4vw;
+            height: 2vw;
+            text-align: center;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            }           
+    }
+}

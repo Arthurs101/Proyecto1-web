@@ -1,0 +1,203 @@
+.box-text{
+  background-color: white;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 2vw;
+  left: -5vw;
+  h1{
+    font-size: 1vw;
+  }
+
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  h1{
+    color: #0E2B6F;
+    font-family: Montserrat, sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+  }
+  .news-container{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg , #0E2B6F 80%, transparent 40%) no-repeat;
+  }
+  .box {
+      width: 40vw;
+      height: 40vw;
+      position: relative;
+      overflow: hidden;
+      margin-right: 2vw;
+      margin-left: 2vw;
+      margin-top: 2vw;
+      margin-bottom: 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .imagen {
+      width: 100%;
+      height: 100%;
+      /* background-image: url(../../assets/messi.jpeg); */
+      background-size: cover;
+      background-position: center;
+      transform: scale(1.1);
+  }
+  
+  .zoom {
+      &:hover{
+        animation: zoom-out 2.5s ease forwards;
+      }
+  }
+  
+  .zoom.active {
+      animation: zoom-out 2.5s ease forwards;
+  }
+  
+  .zoom.active-return {
+      animation: zoom-in 2.5s ease forwards;
+  }
+  
+  @keyframes zoom-out {
+      0% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+  
+  @keyframes zoom-in {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.1);
+      }
+  }
+  #messi-new{
+    height: 40vw;
+    width: 30vw;
+  }
+  /* Estilos de la cuadrícula y las cajas */
+  .grid-container {
+      margin-top: 2vw;
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-template-rows: repeat(2,auto);
+      grid-gap: 2vw;
+      width: 100vw;
+  }
+  
+  
+  .white-bg {
+      background-color: #fff;
+  }
+  
+  .dark-blue-bg {
+      background-color: #0e2b6f;
+      p{
+        color: white;
+      }
+  }
+  
+  
+  .flex-container {
+      display: flex;
+      flex-direction: row-reverse; /* Esto invierte el orden de los elementos dentro del contenedor */
+      width: 30vw;
+      height: 20vw;
+  }
+    
+    .content {
+      flex-grow: 1; /* Esto hace que el contenedor ocupe todo el espacio disponible */
+    }
+    
+   
+  
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      overflow: hidden;
+    }
+    
+    .image-container {
+      width: 50%;
+      height: 100%;
+      overflow: hidden; /* Para ocultar partes de la imagen que sobresalgan del contenedor */
+      img{
+        &:hover{
+          animation: zoom-in 2s ease-in-out forwards;
+        }
+      }
+    }
+    
+    .row-reverse {
+      flex-direction: row-reverse;
+    }
+    
+  
+    .image-right {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    
+    .image-right .image-container {
+      order: 1;
+      margin-left: 15px;
+    }
+    
+    .image-right .content {
+      order: 2;
+    }
+    
+    .card .content {
+      flex-grow: 1;
+      max-width: 50%;
+    }
+    
+    .card .content h2 {
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      width: 160.5px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color:#ec373d;
+    }
+  
+    .card .content h3 {
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      width: 180.5px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color:#eeeeee;
+    }
+    
+    
+    .card .content p {
+      font-size: 11px;
+      margin-bottom: 0;
+      margin-left: 20px;
+      width: 170.0px;
+    }
+    
+    .right-align {
+      text-align: right;
+    }
+    
+   
+    
