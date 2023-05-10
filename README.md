@@ -12,6 +12,7 @@ npm run web
 Para ejecutar el servidor de desarrollo, ejecuta el siguiente comando:
 npm run live-webpack
 
+
 Dependencias
 Este proyecto utiliza las siguientes dependencias:
 
@@ -50,3 +51,4 @@ Este proyecto utiliza las siguientes dependencias de desarrollo:
 "webpack-dev-server": "^4.13.3"
 Licencia
 Este proyecto utiliza la licencia ISC. Consulta el archivo LICENSE para más información.
+
