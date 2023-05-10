@@ -66,16 +66,21 @@
   top: 0%;
   width: 100%;
   .messi-logo{
-    width: 2vw;
+    width: 3vw;
     height: auto;
-    margin: 2%;
-    margin-top: 3%;
+    position: relative;
+    top: 4vw;
+    left: 4vw;
     &::after{
       content: "MENU";
+      font-family: Montserrat , sans-serif;
       font-weight: 600;
       letter-spacing: -1px;
       color: white;
       opacity: 0.9;
+      position: relative;
+      left: 2vw;
+      top: 1vh;
     }
 
   }

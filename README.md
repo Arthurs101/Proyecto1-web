@@ -1,4 +1,5 @@
 webpacklab
+NECESITA NODE JS, NPM , WEBPACK , BABEL y REACT
 Descripción
 Este proyecto es una plantilla para proyectos de webpack.
 
@@ -11,6 +12,43 @@ npm run web
 
 Para ejecutar el servidor de desarrollo, ejecuta el siguiente comando:
 npm run live-webpack
+
+Documentos:
+PROYECTO 1 WEB:
+
+dist_with_babel 
+src
+    app
+        app.js <-- componente que manda a llamar a los demás para armar la página web
+        app.scss
+    assets <--- aqui se almacenan todos los elementos (imagenes, videos, svg etc...)
+    components  <--react componentes
+        countDown <-- reloj de cuenta regresiva
+            clock.js
+            clock.scss
+        footers
+            Bottom.js <--- acá va el anuncio del circo solei , el collage y el ultimo footer
+            Bottom.scss
+        messiStats <--componente para las estadísticas
+            bar.js <-- barra que se anima (component)
+            bar.scss
+            number.js <-- numero que se automaumenta (component)
+            stat.js <-- componente principal 
+            stats.scss
+        newsBanner <-- el apartado de noticias de la página
+            news.js <-- el componente
+            news.scss
+        storeBanner <-- el apartado para la tienda de  messi
+            store.js <-- el componente
+            store.scss
+        wellcomeBanner <-- el componente de la portada
+            cover.js <- el componente
+            cover.scss
+    index.html
+    index.js
+babel.config.js
+README.md
+webpack.config.js
 
 
 Dependencias

@@ -99,6 +99,24 @@
             text-align: center;
             padding-top: 1vw;
             padding-bottom: 1vw;
-            }           
+            } 
+            &.SPECIAL{
+                display: flex;
+                flex-direction: row-reverse;
+                
+                .STATIC-STAT{
+                    background-color: rgba(19, 212, 237 ,0.8);
+                    padding-left: 5vw;
+                    padding-right: 5vw;
+                    font-size: Montserrat, sans-serif;
+                    color: #2E3B58;
+                    font-size: 1vw;
+                    text-align: end;
+                    margin-right: 5vw;
+                    span{
+                        color: white;
+                    }
+                }
+            }          
     }
 }

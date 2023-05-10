@@ -1,13 +1,13 @@
 import React ,{ useState, useEffect } from 'react';
 import './clock.scss'
-function CountdownClock() {
+function CountdownClock({targetDate}) {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const countdownDate = new Date('2023-12-31T23:59:59');
+    const countdownDate = targetDate;
 
     const intervalId = setInterval(() => {
       const currentDate = new Date();

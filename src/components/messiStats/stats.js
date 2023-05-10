@@ -33,8 +33,10 @@ export default function MessiStats() {
                 <p className='Static'>0,59</p>
                 <Bar type={'SMALL'} text={'PROMEDIO'} ></Bar>
                 </div>
-                <div className='Messi-Stats-item'>
-                <Bar type={'SMALL'} text={'DOBLETES'} isEspecial={true} ></Bar>
+                <div className='Messi-Stats-item SPECIAL'>
+                <Bar type={'SMALL'} text={'10 DOBLETES'} isEspecial={true} ></Bar>
+                <div className='STATIC-STAT'>7 <span>HAT TRICK</span></div>
+                <div className='STATIC-STAT' >1 <span>REPOKER</span></div>
                 </div>
                 <div className='Messi-Stats-item'>
                 <Number clasName='Messi-stats-number'value={54} duration={1000}></Number>
